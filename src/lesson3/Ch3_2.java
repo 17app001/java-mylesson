@@ -17,7 +17,7 @@ public class Ch3_2 {
         hour = min / 60;
         int leftSec = (int) (second % 60);
         min = min % 60;
-
+        // 天數跟剩下的小時數
         day = hour / 24;
         hour = hour % 24;
 

@@ -6,9 +6,25 @@ package lesson3;
  */
 public class Ch3_3 {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 0;
+        int a = 5;
+        int b = 5;
         int c = 5;
+
+        a++;
+        --a;
+
+        System.out.println(b - 5);
+        b = b - 5;
+        b -= 5;
+        System.out.println(b);
+
+        a = a + (b = b - 5);
+        a += b -= 5;
+
+        System.out.println(a + "," + b);
+
+        a += 5; // a = a + 5;
+        System.out.println(a);
 
         // 後置運算
         b = a++; // a=a-1(9)
