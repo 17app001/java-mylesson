@@ -16,8 +16,6 @@ public class Ch2_7 {
         System.out.print("請輸入分數:");
         double score = input.nextDouble();
 
-        System.out.println();
-
         System.out.println(name + "," + id + "," + score);
         System.out.printf("%s %d %.2f", name, id, score);
 
