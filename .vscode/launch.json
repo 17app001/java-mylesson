@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ch3_ex2",
+            "request": "launch",
+            "mainClass": "practise.Ch3_ex2",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ch3_ex1",
+            "request": "launch",
+            "mainClass": "practise.Ch3_ex1",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ch2_ex1",
+            "request": "launch",
+            "mainClass": "lesson2.Ch2_ex1",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}",

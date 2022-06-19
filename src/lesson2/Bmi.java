@@ -11,7 +11,7 @@ public class Bmi {
         double height = input.nextShort();
         System.out.print("請輸入體重:");
         double weight = input.nextDouble();
-
+        System.out.print("請輸入姓名:");
         double bmi = weight / Math.pow(height / 100, 2);
 
         System.out.println((int) bmi);
