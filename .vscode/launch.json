@@ -6,6 +6,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ch4_10_4",
+            "request": "launch",
+            "mainClass": "lesson4.Ch4_10_4",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ch4_10_2",
+            "request": "launch",
+            "mainClass": "lesson4.Ch4_10_2",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ch4_10_1",
+            "request": "launch",
+            "mainClass": "lesson4.Ch4_10_1",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ch4_10",
+            "request": "launch",
+            "mainClass": "lesson4.Ch4_10",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ch4_9",
+            "request": "launch",
+            "mainClass": "lesson4.Ch4_9",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ch4_7",
+            "request": "launch",
+            "mainClass": "lesson4.Ch4_7",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ch4_6",
+            "request": "launch",
+            "mainClass": "lesson4.Ch4_6",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ch4_5",
+            "request": "launch",
+            "mainClass": "lesson4.Ch4_5",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ch4_4",
+            "request": "launch",
+            "mainClass": "lesson4.Ch4_4",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ticket",
+            "request": "launch",
+            "mainClass": "lesson4.Ticket",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ch4_2_1",
+            "request": "launch",
+            "mainClass": "lesson4.Ch4_2_1",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
             "name": "Launch Ch3_ex2",
             "request": "launch",
             "mainClass": "practise.Ch3_ex2",
