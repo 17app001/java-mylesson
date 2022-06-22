@@ -16,6 +16,7 @@ public class PrimeCheck {
             // 檢查輸入是否是整數 false==>true(使用not)
             while (!scanner.hasNextInt()) {
                 System.out.println("請輸入正確整數");
+                // 清除不正確的輸入
                 scanner.next();
             }
             // 取得正確整數
