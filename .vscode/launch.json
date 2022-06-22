@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GuessGame",
+            "request": "launch",
+            "mainClass": "lesson4.GuessGame",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
             "name": "Launch Ch4_10_4",
             "request": "launch",
             "mainClass": "lesson4.Ch4_10_4",

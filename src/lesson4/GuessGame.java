@@ -15,6 +15,7 @@ public class GuessGame {
         Random rand = new Random();
         // 1~50數字
         int number = rand.nextInt(50) + 1;
+        boolean bingo = false;
         // 跑動迴圈
         for (int i = 0; i < 5; i++) {
             System.out.print("請猜一個數字(1~50):");
@@ -27,18 +28,22 @@ public class GuessGame {
             // 猜對狀況
             if (guess == number) {
                 System.out.println("你猜對了!");
+                bingo = true;
                 break;
+            }
+
+            if (guess > number) {
+                System.out.println("請猜小一點~");
             } else {
-                if (guess > number) {
-                    System.out.println("請猜小一點~");
-                } else {
-                    System.out.println("請猜大一點~");
-                }
+                System.out.println("請猜大一點~");
             }
         }
 
-        System.out.println("恭喜中獎!");
-        System.out.println("正確數字為:" + number);
+        if (bingo) {
+            System.out.println("恭喜中獎!");
+        } else {
+            System.out.println("正確數字為:" + number);
+        }
         scanner.close();
     }
 }
