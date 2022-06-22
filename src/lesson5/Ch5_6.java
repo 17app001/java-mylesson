@@ -39,8 +39,13 @@ public class Ch5_6 {
         System.out.println("\n===============================");
         for (int i = 0; i < scores2.length; i++) {
             for (int j = 0; j < scores2[i].length; j++) {
-                System.out.println(scores2[i][j]);
+                if (i == scores2.length - 1 && j == scores2[i].length - 1) {
+                    System.out.print(scores2[i][j]);
+                } else {
+                    System.out.print(scores2[i][j] + ",");
+                }
             }
+            System.out.println();
         }
     }
 }
