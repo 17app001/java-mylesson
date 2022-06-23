@@ -2,6 +2,7 @@ package lesson5;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import tools.Tool;
 
 /**
  * 學生成績輸入(優化版)
@@ -12,7 +13,7 @@ public class Ch5_7_1 {
         Scanner scanner = new Scanner(System.in);
         // 人數
         System.out.print("請輸入學生人數:");
-        int count = scanner.nextInt();
+        int count = Tool.getNextInt(scanner);
         // 科目數
         String[] subjects = { "國文", "英文", "數學" };
         // 姓名
@@ -27,7 +28,7 @@ public class Ch5_7_1 {
             // 輸入每科分數
             for (int j = 0; j < subjects.length; j++) {
                 System.out.printf("請輸入%s分數:", subjects[j]);
-                scores[i][j] = scanner.nextDouble();
+                scores[i][j] = Tool.getNextDouble(scanner);
             }
         }
         // 輸出

@@ -10,7 +10,16 @@ public class Ch5_13 {
     public static void main(String[] args) {
         int[] x = { 1, 2, 3, 4, 5 };
         System.out.println(x);
+        System.out.println("==================");
+        int total = 0;
+        for (int i = 0; i < x.length; i++) {
+            System.out.println(x[i]);
+            total += x[i];
+        }
+        System.out.println(total);
         System.out.println(Arrays.toString(x));
+
+        System.out.println("=================");
         // 指向同個記憶體位置
         int[] y = x;
         System.out.println(y);
