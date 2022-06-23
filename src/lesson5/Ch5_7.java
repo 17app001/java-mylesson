@@ -3,6 +3,10 @@ package lesson5;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * 學生成績輸入
+ * 使用二維陣列
+ */
 public class Ch5_7 {
     public static void main(String[] args) {
         // 人數
@@ -26,7 +30,6 @@ public class Ch5_7 {
                 scores[i][j] = scanner.nextDouble();
             }
         }
-
         // 輸出
         for (int i = 0; i < count; i++) {
             double total = 0;
