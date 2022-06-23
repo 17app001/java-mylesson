@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Lotto",
+            "request": "launch",
+            "mainClass": "lesson5.Lotto",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
             "name": "Launch GuessGame",
             "request": "launch",
             "mainClass": "lesson4.GuessGame",
