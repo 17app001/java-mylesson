@@ -15,6 +15,7 @@ public class Ch4_10_2 {
         boolean exit = false;
         int count = 0;
 
+        // do-while
         do {
             System.out.printf("請輸入第%d位成績:", count + 1);
             total += scanner.nextDouble();

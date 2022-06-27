@@ -31,6 +31,34 @@ public class Tool {
         System.out.println(total);
     }
 
+    public static String toString(int[] array) {
+        StringBuilder sb = new StringBuilder("{");
+        for (int i = 0; i < array.length; i++) {
+            if (i == array.length - 1) {
+                sb.append(array[i]);
+                continue;
+            }
+            sb.append(array[i]).append(",");
+        }
+
+        sb.append("}");
+        return sb.toString();
+    }
+
+    public static String toString(double[] array) {
+        StringBuilder sb = new StringBuilder("{");
+        for (int i = 0; i < array.length; i++) {
+            if (i == array.length - 1) {
+                sb.append(array[i]);
+                continue;
+            }
+            sb.append(array[i]).append(",");
+        }
+
+        sb.append("}");
+        return sb.toString();
+    }
+
     /***
      * 回傳正確的整數
      * 
