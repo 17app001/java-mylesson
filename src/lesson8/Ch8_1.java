@@ -15,7 +15,14 @@ public class Ch8_1 {
         System.out.println(c3.getArea());
 
         c2.radius = 3.0;
-        System.out.printf("c2的面積為%.2f", c2.getArea());
+        System.out.printf("c2的面積為%.2f%n", c2.getArea());
+
+        c2.setRadius(10);
+        c3.setRadius(20);
+        c3.radius = 1001;
+        c2.setRadius(100000);
+        System.out.println(c2.getPerimeter());
+        System.out.println(c3.getPerimeter());
 
     }
 }
