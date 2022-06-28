@@ -7,23 +7,23 @@ public class TVDemo {
         TV tv3 = null;
 
         System.out.println(tv1);
-        System.out.println(tv1.on);
-        System.out.println(tv1.channel);
+        System.out.println(tv1.getOn());
+        System.out.println(tv1.getChannel());
 
         tv1.turnOn();
         tv1.channelUp();
         tv1.setVolume(10);
-        System.out.printf("第%d台 音量:%d%n", tv1.channel, tv1.volumeLevel);
+        System.out.printf("第%d台 音量:%d%n", tv1.getChannel(), tv1.getVolumeLevel());
         tv1.turnOff();
         tv1.channelUp();
-        System.out.printf("第%d台 音量:%d%n", tv1.channel, tv1.volumeLevel);
+        System.out.printf("第%d台 音量:%d%n", tv1.getChannel(), tv1.getVolumeLevel());
         System.out.println("----------------------------------");
         tv2.turnOn();
         tv2.setChannel(100);
         tv2.setVolume(3);
         tv2.volumeUp();
 
-        System.out.printf("第%d台 音量:%d%n", tv2.channel, tv2.volumeLevel);
+        System.out.printf("第%d台 音量:%d%n", tv2.getChannel(), tv2.getVolumeLevel());
 
         System.out.println(tv3);
     }
