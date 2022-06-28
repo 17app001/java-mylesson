@@ -30,5 +30,16 @@ public class Ch7_7 {
         String result = number % 2 == 0 ? "是偶數" : "不是偶數";
         System.out.println(number + result);
 
+        // 時間計數
+        long start = System.currentTimeMillis();
+
+        double x1 = 10;
+        for (long i = 0; i < 10000000; i++) {
+            x1 *= 2;
+        }
+
+        System.out.println((System.currentTimeMillis() - start) / 1000.0 + "秒");
+        System.out.println(x1);
+
     }
 }
