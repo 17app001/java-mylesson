@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Zoo",
+            "request": "launch",
+            "mainClass": "lesson9.Zoo",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
             "name": "Launch Ch7_3",
             "request": "launch",
             "mainClass": "lesson7.Ch7_3",

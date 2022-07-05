@@ -6,12 +6,14 @@ import java.util.Scanner;
 /**
  * 好用函式的類別
  */
-public class Tool {
+final public class Tool {
 
     public static void main(String[] args) {
         int[] x = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         int[] y = reverse(x);
         System.out.println(x == y);
+
+        System.out.println(Math.PI);
 
         System.out.println(y);
         System.out.println(Arrays.toString(y));

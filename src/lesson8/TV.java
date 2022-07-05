@@ -1,5 +1,8 @@
 package lesson8;
 
+/**
+ * 使用static 屬性跟方法(類別唯一)
+ */
 public class TV {
     // 常數區
     final int MAX_CHANNEL = 120;
@@ -11,10 +14,14 @@ public class TV {
     private boolean on;
     String brand;
 
+    // 紀錄電視產生的計數(static類別唯一)
+    private static int count;
+
     public TV() {
         channel = 1;
         volumeLevel = 1;
         brand = "Sony";
+        count++;
     }
 
     public TV(int channel, int volumeLevel) {
@@ -22,6 +29,12 @@ public class TV {
         turnOn();
         setChannel(channel);
         setVolume(volumeLevel);
+        getCounter();
+    }
+
+    // 類別唯一的方法
+    public static int getCounter() {
+        return count;
     }
 
     public void setBrand(String brand) {
