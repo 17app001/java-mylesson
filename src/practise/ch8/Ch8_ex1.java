@@ -1,4 +1,4 @@
-package practise;
+package practise.ch8;
 
 import java.util.Scanner;
 

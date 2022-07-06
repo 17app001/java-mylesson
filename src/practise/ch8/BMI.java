@@ -1,4 +1,4 @@
-package practise;
+package practise.ch8;
 
 public class BMI {
     private String name;
