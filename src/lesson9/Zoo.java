@@ -12,6 +12,7 @@ public class Zoo {
         Pandas pandas = new Pandas("旺財", 35);
         Parrot parrot = new Parrot("阿飛", 8);
 
+        pandas.eat();
         // 向上轉型(父物件=子物件)
         Animal animal = parrot;
         System.out.println(animal);

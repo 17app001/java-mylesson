@@ -1,4 +1,4 @@
-package lesson9.animal;
+package lesson10.animal;
 
 /**
  * 鸚鵡類別

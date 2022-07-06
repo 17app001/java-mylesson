@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import tools.Tool;
 
-public class Ch8_ex1 {
+public class Ex8_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
