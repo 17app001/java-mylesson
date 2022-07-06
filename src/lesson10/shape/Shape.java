@@ -1,4 +1,4 @@
-package lesson10;
+package lesson10.shape;
 
 /**
  * 形狀抽象類別

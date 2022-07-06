@@ -1,5 +1,10 @@
 package lesson10;
 
+import lesson10.shape.Circle;
+import lesson10.shape.Rectangle;
+import lesson10.shape.Shape;
+import lesson10.shape.SuperCircle;
+
 public class Ch10_1 {
     public static void main(String[] args) {
 

@@ -1,11 +1,11 @@
-package lesson10;
+package lesson10.shape;
 
 /***
  * 完整實作兩個抽象方法
  */
 public class SuperCircle extends Circle {
 
-    SuperCircle(double radius) {
+    public SuperCircle(double radius) {
         super(radius);
     }
 

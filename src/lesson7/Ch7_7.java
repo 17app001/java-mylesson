@@ -32,10 +32,10 @@ public class Ch7_7 {
 
         // 時間計數
         long start = System.currentTimeMillis();
-
+        System.out.println(start);
         double x1 = 10;
-        for (long i = 0; i < 10000000; i++) {
-            x1 *= 2;
+        for (long i = 0; i < 100000000; i++) {
+            x1 += 2;
         }
 
         System.out.println((System.currentTimeMillis() - start) / 1000.0 + "秒");

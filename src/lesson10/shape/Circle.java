@@ -1,4 +1,4 @@
-package lesson10;
+package lesson10.shape;
 
 /***
  * 類別繼承抽象類別後也可以抽象化
@@ -12,7 +12,7 @@ public abstract class Circle extends Shape {
         this.radius = radius;
     }
 
-    protected abstract double getPerimeter();
+    public abstract double getPerimeter();
 
     public double getRadius() {
         return radius;

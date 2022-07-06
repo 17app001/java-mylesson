@@ -3,7 +3,7 @@ package lesson10.animal;
 /**
  * 動物類別(父類別)
  */
-public class Animal extends Object {
+public abstract class Animal extends Object implements Cloneable {
     // 靜態且公開的最後常數
     public static final int MALE = 0;
     public static final int FEMALE = 1;
@@ -58,9 +58,9 @@ public class Animal extends Object {
         return weight;
     }
 
-    public void eat() {
-        System.out.println("i like eating.");
-    }
+    public abstract void eat();
+
+    public abstract void sound();
 
     public void sleep() {
         System.out.println("i like sleeping.");
@@ -73,6 +73,37 @@ public class Animal extends Object {
     @Override
     public String toString() {
         return String.format("%s weight:%.2f", name, weight);
+    }
+
+    // 覆載
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Animal) {
+            // 向下轉型
+            Animal animal = (Animal) obj;
+            if (animal.name.equals(name) &&
+                    animal.sex == sex && animal.weight == weight) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    // 多載
+    public boolean equals(Animal animal) {
+        if (animal.name.equals(name) &&
+                animal.sex == sex && animal.weight == weight) {
+            return true;
+        }
+
+        return false;
+    }
+
+    // 覆載得類別修飾子改成更高級別(protected==>public)
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return (Animal) super.clone();
     }
 
 }

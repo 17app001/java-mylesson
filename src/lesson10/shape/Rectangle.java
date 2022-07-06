@@ -1,7 +1,7 @@
-package lesson10;
+package lesson10.shape;
 
 public class Rectangle extends Shape {
-    Rectangle(double width, double height) {
+    public Rectangle(double width, double height) {
         this.width = width;
         this.height = height;
     }

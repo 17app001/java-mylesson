@@ -28,12 +28,16 @@ public class Rabbit extends Animal {
     }
 
     public void eat() {
-        super.eat();
         System.out.println("我喜歡吃草!");
     }
 
     // 多載
     public void eat(String food) {
         System.out.println("我更喜歡吃" + food);
+    }
+
+    @Override
+    public void sound() {
+        System.out.println("唉唉叫...");
     }
 }
