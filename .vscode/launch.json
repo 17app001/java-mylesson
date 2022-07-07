@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ch12_2",
+            "request": "launch",
+            "mainClass": "lesson12.Ch12_2",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
             "name": "Launch ATMDemo",
             "request": "launch",
             "mainClass": "lesson11.atm.ATMDemo",
