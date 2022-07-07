@@ -11,21 +11,27 @@ package lesson11;
 public class Ch11_1 {
     public static void main(String[] args) {
         int[] numbers = { 1, 2, 3, 4, 5, 6 };
-        // 以下都是RuntimeException
+
         try {
             System.out.println(10 / 1);
-            System.out.println(numbers[numbers.length - 1]);
+            System.out.println(numbers[numbers.length]);
 
+        } catch (ArithmeticException ex) {
+            System.out.println(ex);
+            System.out.println("除數不能為零");
         } catch (ArrayIndexOutOfBoundsException ex) {
             System.out.println(ex);
+            System.out.println("====================");
+            System.out.println(ex.getMessage());
+            System.out.println("====================");
+            ex.printStackTrace();
+            System.out.println("====================");
             System.out.println("陣列超出範圍");
-        } catch (java.lang.ArithmeticException ex) {
-            System.out.println(ex);
-            System.out.println("除數不能為0");
         } finally {
             System.out.println("到達finally...");
         }
 
         System.out.println("done!");
+
     }
 }
