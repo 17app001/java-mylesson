@@ -2,7 +2,7 @@ package lesson11;
 
 import java.util.Arrays;
 
-public class Student {
+public class Student implements Comparable<Student> {
     private String name;
     private double[] scores;
     // 靜態屬性
@@ -37,6 +37,7 @@ public class Student {
     }
 
     // 平均分方法(類別方法)
+    // 產生一個靜態方法，可以計算同學的平均分並傳回
     public static double getAvg(Student student) {
         double total = 0;
         double[] scores = student.getScores();
@@ -47,13 +48,17 @@ public class Student {
         return total / scores.length;
     }
 
-    // 請你覆載toString方法(輸出name,scores)
-    // 回傳String ==>Arrays.toString()
     @Override
     public String toString() {
         return String.format("%s scores:%s",
                 name, Arrays.toString(scores));
     }
 
-    // 產生一個靜態方法，可以計算同學的平均分並傳回
+    // A,B,C
+    // 77.5,66,1OO ==>66,77.5,100
+    // 0==>兩個值相等,1==>我比較大(交換位置),-1==>我比較小(位置不變)
+    @Override
+    public int compareTo(Student o) {
+        return getAvg(this) == getAvg(o) ? 0 : getAvg(this) > getAvg(o) ? 1 : -1;
+    }
 }

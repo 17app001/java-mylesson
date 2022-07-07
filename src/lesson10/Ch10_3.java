@@ -15,7 +15,6 @@ public class Ch10_3 {
         try {
             parrot3 = (Parrot) parrot.clone();
         } catch (CloneNotSupportedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
