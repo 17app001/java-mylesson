@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ch13_6",
+            "request": "launch",
+            "mainClass": "lesson13.Ch13_6",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ch13_1",
+            "request": "launch",
+            "mainClass": "lesson13.Ch13_1",
+            "projectName": "MyLesson_94355a1a"
+        },
+        {
+            "type": "java",
             "name": "Launch Ch13_4",
             "request": "launch",
             "mainClass": "lesson13.Ch13_4",
@@ -199,6 +213,13 @@
             "request": "launch",
             "mainClass": "${file}",
             "encoding": "950"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File2",
+            "request": "launch",
+            "mainClass": "${file}",
+            "encoding": "UTF-8"
         },
         {
             "type": "java",

@@ -2,6 +2,8 @@ package tools;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.io.File;
 
 /**
  * 好用函式的類別
@@ -126,4 +128,36 @@ final public class Tool {
 
         return scanner.nextDouble();
     }
+
+    /***
+     * 查找所有檔案包含filter
+     * 
+     * @param path
+     * @param fileList
+     * @param filters
+     */
+    public static void findAllFiles(String path, ArrayList<File> fileList,
+            String[] filters) {
+        File file = new File(path);
+        File[] files = file.listFiles();
+        for (File f : files) {
+            if (f.isDirectory()) {
+                findAllFiles(f.getPath(), fileList, filters);
+                continue;
+            }
+            // 所有檔案(不篩選)
+            if (filters == null) {
+                fileList.add(f);
+                continue;
+            }
+            // 篩選檔案
+            for (String filter : filters) {
+                if (f.getName().endsWith(filter)) {
+                    fileList.add(f);
+                    break;
+                }
+            }
+        }
+    }
+
 }

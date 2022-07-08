@@ -1,25 +1,25 @@
-package test.ch13;
+package lesson13;
 
 import java.util.Scanner;
-
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.io.*;
 
 /***
  * 學生分數輸入測試
  * 使用ArrayList
  */
-public class Ch12_2 {
+public class Ch13_8 {
 
     // 常數宣告
     public static final String[] SUBJECTS = { "國文", "數學", "英文" };
+    // 檔案名稱
+    public static final String FILE_NAME = "resource/txt/student.txt";
+    // 宣告集合
+    private static ArrayList<Student> students = new ArrayList<Student>();
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        // 宣告集合
-        ArrayList<Student> students = new ArrayList<Student>();
         int i = 0;
         // 改用while迴圈輸入(直到-1離開)
         while (true) {
@@ -67,21 +67,28 @@ public class Ch12_2 {
                     student.getName(), Student.getAvg(student));
         });
 
-        writeToFile(students);
-
         System.out.println("輸入結束.");
         scanner.close();
+
+        // 寫入檔案(student.txt)
+        // Jerry,100,77,88
+        // Mary,66,77,55
+        writeToFile();
     }
 
-    public static void writeToFile(ArrayList<Student> students) {
+    public static void writeToFile() {
         FileWriter fileWriter = null;
+
         try {
-            fileWriter = new FileWriter("src/resource/student.txt");
+            fileWriter = new FileWriter(FILE_NAME, true);
 
             for (Student student : students) {
-                fileWriter.write(student.getInfo());
+                // String temp = String.format("%-10s 平均分:%6.2f%n",
+                // student.getName(), Student.getAvg(student));
+                fileWriter.write(student.toString());
             }
-            System.out.println("資料寫入成功!");
+
+            System.out.println("寫入成功!");
 
         } catch (IOException e) {
             System.out.println(e);
@@ -89,10 +96,11 @@ public class Ch12_2 {
             if (fileWriter != null) {
                 try {
                     fileWriter.close();
-                } catch (IOException ex) {
-                    System.out.println(ex);
+                } catch (IOException e) {
+                    System.out.println(e);
                 }
             }
         }
     }
+
 }
