@@ -14,7 +14,7 @@ public class Ch13_8 {
     // 常數宣告
     public static final String[] SUBJECTS = { "國文", "數學", "英文" };
     // 檔案名稱
-    public static final String FILE_NAME = "resource/txt/student.txt";
+    public static final String FILE_NAME = "resource/txt/student.csv";
     // 宣告集合
     private static ArrayList<Student> students = new ArrayList<Student>();
 
@@ -80,7 +80,7 @@ public class Ch13_8 {
         FileWriter fileWriter = null;
 
         try {
-            fileWriter = new FileWriter(FILE_NAME, true);
+            fileWriter = new FileWriter(FILE_NAME);
 
             for (Student student : students) {
                 // String temp = String.format("%-10s 平均分:%6.2f%n",
