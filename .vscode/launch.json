@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch StudentForm",
+      "request": "launch",
+      "mainClass": "test.StudentForm",
+      "projectName": "MyLesson_94355a1a"
+    },
+    {
+      "type": "java",
+      "name": "Launch GradeSystem",
+      "request": "launch",
+      "mainClass": "lesson14.GradeSystem",
+      "projectName": "MyLesson_94355a1a"
+    },
+    {
+      "type": "java",
       "name": "Launch Ch14_2",
       "request": "launch",
       "mainClass": "lesson14.Ch14_2",

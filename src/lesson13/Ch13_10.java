@@ -9,7 +9,8 @@ public class Ch13_10 {
 
     // 轉換csv text to datas
     public static void convertCsv(String str) {
-        String[] datas = str.split("\n");
+        // 移除前後的空白跟換行
+        String[] datas = str.trim().split("\n");
         int count = 0;
         for (String data : datas) {
 
@@ -18,6 +19,7 @@ public class Ch13_10 {
             }
             String[] student = data.split(",");
             String name = student[0];
+            System.out.println(name);
 
             double total = 0;
             for (int i = 1; i < student.length; i++) {
@@ -30,7 +32,7 @@ public class Ch13_10 {
     }
 
     public static void main(String[] args) {
-        String path = "resource/txt/student.csv";
+        String path = "resource/txt/new_student.csv";
 
         File file = new File(path);
 

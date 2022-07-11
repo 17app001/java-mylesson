@@ -160,4 +160,15 @@ final public class Tool {
         }
     }
 
+    // 檢查是否是數字
+    public static boolean isNumber(String text) {
+        try {
+            Double.parseDouble(text);
+            return true;
+
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+
 }
